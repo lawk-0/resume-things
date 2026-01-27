@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Customized for Shubh Agnihotri
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Shubh Agnihotri} & Email : shubh2004@gmail.com \\
+  github.com/lawk-0 \ | \ linkedin.com/in/lawk0 & Mobile : +91-9335451432 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology (KIIT University)}{Bhubaneswar, India}
+      {B.Tech in Computer Science and Engineering; CGPA: 8.15}{2023 -- 2027}
+
+    \resumeSubheading
+      {City Montessori School, Gomtinagar-I}{Lucknow, India}
+      {Intermediate (Class XII); 91\%}{2022}
+
+    \resumeSubheading
+      {St. Francis' College}{Lucknow, India}
+      {High School (Class X); 84.8\%}{2020}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience / Practical Exposure}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{AI \& Data Science Projects (Academic + Self-Initiated)}
+  {Built end-to-end ML and NLP systems including data preprocessing, feature engineering, model training, evaluation, and Flask-based REST API deployment using Python.}
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{AI Resume Checker System}
+      {Developed an NLP-based resume analysis platform using spaCy and scikit-learn for skill extraction and candidate-job matching; achieved \textbf{85\%+ accuracy} on labeled resume datasets and automated PDF parsing pipelines.}
+
+    \resumeSubItem{Pratham — AI Voice Assistant}
+      {Built a desktop AI assistant with multilingual speech recognition, system automation, and real-time LLM responses; enabled voice-driven task execution using Python automation workflows.}
+
+    \resumeSubItem{Real-Time AI Search Engine}
+      {Developed a Groq-powered real-time search engine with ranked response generation, live web scraping using Selenium, and optimized response latency through parallel request handling.}
+
+    \resumeSubItem{AI Sentiment Analysis System}
+      {Implemented TF-IDF vectorization with Logistic Regression for sentiment classification; trained on large-scale text datasets achieving \textbf{87\% accuracy} and deployed inference via Flask REST APIs.}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+
+   \item{
+     \textbf{Programming Languages}{: Python, Java, C++, SQL, JavaScript, Go}
+   }
+
+   \item{
+     \textbf{Machine Learning \& AI}{: Classification, Regression, NLP, Vector Search, RAG, Feature Engineering, Model Evaluation}
+   }
+
+   \item{
+     \textbf{Deep Learning}{: Neural Networks, Transformers (basic), TensorFlow, PyTorch, Keras}
+   }
+
+   \item{
+     \textbf{Data Engineering}{: Data Pipelines, Data Cleaning, Web Scraping, Automation, ETL Concepts}
+   }
+
+   \item{
+     \textbf{Libraries \& Tools}{: scikit-learn, NumPy, Pandas, Matplotlib, Selenium, Flask, Git, GitHub, Jupyter, Linux}
+   }
+
+   \item{
+     \textbf{Cloud \& Deployment}{: Oracle Cloud Infrastructure (OCI), Model Deployment, REST APIs}
+   }
+
+ \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+ \resumeSubHeadingListStart
+
+   \resumeSubItem{OCI Generative AI Professional — Oracle (2025)}
+     {LLMs, RAG pipelines, embeddings, vector databases, LangChain workflows}
+
+   \resumeSubItem{OCI Data Science Professional — Oracle (2025)}
+     {ML pipelines, model development, deployment and governance on OCI}
+
+   \resumeSubItem{Oracle AI Vector Search Professional — Oracle (2025)}
+     {Semantic search, embeddings, AI-powered applications using Oracle Database 23ai}
+
+   \resumeSubItem{21 Projects: ML, Deep Learning \& GenAI — GeeksforGeeks}
+     {Built portfolio-grade AI systems using modern ML and GenAI frameworks}
+
+   \resumeSubItem{Job-Ready Data Science — CodeWithHarry}
+     {EDA, statistics, ML, LLMs, RAG and production-grade workflows}
+
+   \resumeSubItem{McKinsey.org Forward Program — McKinsey \& Company}
+     {Business strategy, structured problem solving and communication}
+
+ \resumeSubHeadingListEnd
+
+\end{document}
